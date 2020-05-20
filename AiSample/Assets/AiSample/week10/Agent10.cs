@@ -16,7 +16,6 @@ public class Agent10 : MonoBehaviour
             if (Physics.Raycast(Camera.main.ScreenToWorldPoint(mouse_pos), -Vector3.up, out hit, 1000))
             {
                 _pickPos = hit.point;
-                _pickPos.y = 0.0f;
             }
         }
     }
