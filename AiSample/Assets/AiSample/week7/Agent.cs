@@ -13,16 +13,12 @@ public class Agent : MonoBehaviour
     [SerializeField]
     private float _deceleration = 1.0f;
 
-    private bool _isSeek = false;
-
     private Vector3 _velocity = Vector3.zero;
 
     private void Update()
     {
         if (Input.GetMouseButtonUp(0))
         {
-            _isSeek = true;
-
             Vector3 mouse_pos = Input.mousePosition;
 
             RaycastHit hit;
